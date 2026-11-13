@@ -35,7 +35,7 @@
 <tr><th scope="row">5</th><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+A5+game-000001&amp;body=Submit+this+issue+to+fire+at+A5.+Return+to+the+profile+and+refresh+after+processing." title="Fire at A5">·</a></td><td align="center">○</td><td align="center">#</td><td align="center">○</td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+E5+game-000001&amp;body=Submit+this+issue+to+fire+at+E5.+Return+to+the+profile+and+refresh+after+processing." title="Fire at E5">·</a></td><td align="center">○</td><td align="center">○</td><td align="center">○</td></tr>
 <tr><th scope="row">6</th><td align="center">○</td><td align="center">○</td><td align="center">#</td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+D6+game-000001&amp;body=Submit+this+issue+to+fire+at+D6.+Return+to+the+profile+and+refresh+after+processing." title="Fire at D6">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+E6+game-000001&amp;body=Submit+this+issue+to+fire+at+E6.+Return+to+the+profile+and+refresh+after+processing." title="Fire at E6">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+F6+game-000001&amp;body=Submit+this+issue+to+fire+at+F6.+Return+to+the+profile+and+refresh+after+processing." title="Fire at F6">·</a></td><td align="center">○</td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+H6+game-000001&amp;body=Submit+this+issue+to+fire+at+H6.+Return+to+the+profile+and+refresh+after+processing." title="Fire at H6">·</a></td></tr>
 <tr><th scope="row">7</th><td align="center">○</td><td align="center">○</td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+C7+game-000001&amp;body=Submit+this+issue+to+fire+at+C7.+Return+to+the+profile+and+refresh+after+processing." title="Fire at C7">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+D7+game-000001&amp;body=Submit+this+issue+to+fire+at+D7.+Return+to+the+profile+and+refresh+after+processing." title="Fire at D7">·</a></td><td align="center">○</td><td align="center">○</td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+G7+game-000001&amp;body=Submit+this+issue+to+fire+at+G7.+Return+to+the+profile+and+refresh+after+processing." title="Fire at G7">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+H7+game-000001&amp;body=Submit+this+issue+to+fire+at+H7.+Return+to+the+profile+and+refresh+after+processing." title="Fire at H7">·</a></td></tr>
-<tr><th scope="row">8</th><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+A8+game-000001&amp;body=Submit+this+issue+to+fire+at+A8.+Return+to+the+profile+and+refresh+after+processing." title="Fire at A8">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+B8+game-000001&amp;body=Submit+this+issue+to+fire+at+B8.+Return+to+the+profile+and+refresh+after+processing." title="Fire at B8">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+C8+game-000001&amp;body=Submit+this+issue+to+fire+at+C8.+Return+to+the+profile+and+refresh+after+processing." title="Fire at C8">·</a></td><td align="center">○</td><td align="center">#</td><td align="center">#</td><td align="center">#</td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+H8+game-000001&amp;body=Submit+this+issue+to+fire+at+H8.+Return+to+the+profile+and+refresh+after+processing." title="Fire at H8">·</a></td></tr>
+<tr><th scope="row">8</th><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+A8+game-000001&amp;body=Submit+this+issue+to+fire+at+A8.+Return+to+the+profile+and+refresh+after+processing." title="Fire at A8">·</a></td><td align="center">○</td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+C8+game-000001&amp;body=Submit+this+issue+to+fire+at+C8.+Return+to+the+profile+and+refresh+after+processing." title="Fire at C8">·</a></td><td align="center">○</td><td align="center">#</td><td align="center">#</td><td align="center">#</td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+H8+game-000001&amp;body=Submit+this+issue+to+fire+at+H8.+Return+to+the+profile+and+refresh+after+processing." title="Fire at H8">·</a></td></tr>
 </tbody>
 </table>
 </div>
@@ -44,11 +44,13 @@
 
 <br />
 
-<p align="center">Shots: <strong>39</strong> &nbsp; · &nbsp; Hits: <strong>8/10</strong> &nbsp; · &nbsp; Players: <strong>1</strong></p>
+<p align="center">Shots: <strong>40</strong> &nbsp; · &nbsp; Hits: <strong>8/10</strong> &nbsp; · &nbsp; Players: <strong>1</strong></p>
 
 <br />
 
 <h3 align="center">Last five shots</h3>
+
+<p align="center"><code>B8</code> — miss by <a href="https://github.com/elkraps">@elkraps</a> (<a href="https://github.com/elkraps/elkraps/issues/40">#40</a>)</p>
 
 <p align="center"><code>A7</code> — miss by <a href="https://github.com/elkraps">@elkraps</a> (<a href="https://github.com/elkraps/elkraps/issues/39">#39</a>)</p>
 
@@ -58,13 +60,11 @@
 
 <p align="center"><code>H1</code> — miss by <a href="https://github.com/elkraps">@elkraps</a> (<a href="https://github.com/elkraps/elkraps/issues/36">#36</a>)</p>
 
-<p align="center"><code>C1</code> — sunk by <a href="https://github.com/elkraps">@elkraps</a> (<a href="https://github.com/elkraps/elkraps/issues/35">#35</a>)</p>
-
 <h3 align="center">Current game leaders</h3>
 
 <table align="center" style="display: table; width: auto; margin-left: auto; margin-right: auto;">
 <tr><th>Player</th><th>Hits</th><th>Ships sunk</th><th>Shots</th></tr>
-<tr><td><a href="https://github.com/elkraps">@elkraps</a></td><td>8</td><td>4</td><td>39</td></tr>
+<tr><td><a href="https://github.com/elkraps">@elkraps</a></td><td>8</td><td>4</td><td>40</td></tr>
 </table>
 
 <br />
@@ -74,13 +74,13 @@
 
 <h3 align="center">Hall of Fame</h3>
 
-<p align="center">Games completed: <strong>0</strong> &nbsp; · &nbsp; Shots: <strong>39</strong> &nbsp; · &nbsp; Players: <strong>1</strong></p>
+<p align="center">Games completed: <strong>0</strong> &nbsp; · &nbsp; Shots: <strong>40</strong> &nbsp; · &nbsp; Players: <strong>1</strong></p>
 
 <p align="center"><sub>All-time top 10 · completed games + current game</sub></p>
 
 <table align="center" style="display: table; width: auto; margin-left: auto; margin-right: auto;">
 <tr><th>Player</th><th>Hits</th><th>Ships sunk</th><th>Shots</th></tr>
-<tr><td><a href="https://github.com/elkraps">@elkraps</a></td><td>8</td><td>4</td><td>39</td></tr>
+<tr><td><a href="https://github.com/elkraps">@elkraps</a></td><td>8</td><td>4</td><td>40</td></tr>
 </table>
 
 </details>
