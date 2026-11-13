@@ -250,6 +250,17 @@
       "issue_number": 29,
       "processed_at": "2026-11-13T13:46:09Z",
       "sunk_cells": []
+    },
+    {
+      "coordinate": "F4",
+      "result": "sunk",
+      "actor": "elkraps",
+      "issue_number": 30,
+      "processed_at": "2026-11-13T13:46:32Z",
+      "sunk_cells": [
+        "F4",
+        "G4"
+      ]
     }
   ],
   "secret_commitment": "901659fb5e23ec7703acb4de75f088cba7795ea73c4c91a5af7a55e2ac198463"
