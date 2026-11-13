@@ -158,5 +158,10 @@
     "message": "Shot C6: sunk a 2-cell ship.\n\nGame: game-000001\nShots: 32\nShips remaining: 3.\n\nThe board in the README has been updated.",
     "delivered": true,
     "processed_at": "2026-11-13T13:47:29Z"
+  },
+  "33": {
+    "message": "Shot B2: miss.\n\nGame: game-000001\nShots: 33\nShips remaining: 3.\n\nThe board in the README has been updated.",
+    "delivered": false,
+    "processed_at": "2026-11-13T13:48:49Z"
   }
 }
