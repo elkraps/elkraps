@@ -120,7 +120,8 @@ def render(state, repository, previous=None):
         f'<p align="center"><sub>{escape(state["game_id"])} · {escape(state["status"])}</sub></p>',
         '<p align="center">\n'
         "  Click a cell → submit the issue → refresh to see your shot.<br />\n"
-        "  One shared fleet on an 8×8 board. Sink every ship. Play as often as you like.\n"
+        "  One shared fleet on an 8×8 board. Sink every ship. Play as often as you like.<br />\n"
+        "  Every game has a new ship layout — even I don't know where they're hiding :)\n"
         "</p>",
         "<br />",
         fleet_status(state),

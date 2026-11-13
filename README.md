@@ -15,7 +15,8 @@
 
 <p align="center">
   Click a cell → submit the issue → refresh to see your shot.<br />
-  One shared fleet on an 8×8 board. Sink every ship. Play as often as you like.
+  One shared fleet on an 8×8 board. Sink every ship. Play as often as you like.<br />
+  Every game has a new ship layout — even I don't know where they're hiding :)
 </p>
 
 <br />
