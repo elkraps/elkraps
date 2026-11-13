@@ -269,6 +269,17 @@
       "issue_number": 31,
       "processed_at": "2026-11-13T13:47:06Z",
       "sunk_cells": []
+    },
+    {
+      "coordinate": "C6",
+      "result": "sunk",
+      "actor": "elkraps",
+      "issue_number": 32,
+      "processed_at": "2026-11-13T13:47:29Z",
+      "sunk_cells": [
+        "C5",
+        "C6"
+      ]
     }
   ],
   "secret_commitment": "901659fb5e23ec7703acb4de75f088cba7795ea73c4c91a5af7a55e2ac198463"
