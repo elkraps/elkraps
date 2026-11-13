@@ -74,13 +74,13 @@
 
 <h3 align="center">Hall of Fame</h3>
 
-<p align="center">Games completed: <strong>0</strong> &nbsp; · &nbsp; Shots: <strong>11</strong> &nbsp; · &nbsp; Players: <strong>1</strong></p>
+<p align="center">Games completed: <strong>0</strong> &nbsp; · &nbsp; Shots: <strong>12</strong> &nbsp; · &nbsp; Players: <strong>1</strong></p>
 
 <p align="center"><sub>All-time top 10 · completed games + current game</sub></p>
 
 <table align="center" style="display: table; width: auto; margin-left: auto; margin-right: auto;">
 <tr><th>Player</th><th>Hits</th><th>Ships sunk</th><th>Shots</th></tr>
-<tr><td><a href="https://github.com/elkraps">@elkraps</a></td><td>3</td><td>1</td><td>11</td></tr>
+<tr><td><a href="https://github.com/elkraps">@elkraps</a></td><td>3</td><td>1</td><td>12</td></tr>
 </table>
 
 </details>
