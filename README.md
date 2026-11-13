@@ -53,21 +53,21 @@
 
 <h3 align="center">Last five shots</h3>
 
-<p align="center"><code>G8</code> — sunk by @elkraps (<a href="https://github.com/elkraps/elkraps/issues/11">#11</a>)</p>
+<p align="center"><code>G8</code> — sunk by <a href="https://github.com/elkraps">@elkraps</a> (<a href="https://github.com/elkraps/elkraps/issues/11">#11</a>)</p>
 
-<p align="center"><code>D8</code> — miss by @elkraps (<a href="https://github.com/elkraps/elkraps/issues/10">#10</a>)</p>
+<p align="center"><code>D8</code> — miss by <a href="https://github.com/elkraps">@elkraps</a> (<a href="https://github.com/elkraps/elkraps/issues/10">#10</a>)</p>
 
-<p align="center"><code>E8</code> — hit by @elkraps (<a href="https://github.com/elkraps/elkraps/issues/9">#9</a>)</p>
+<p align="center"><code>E8</code> — hit by <a href="https://github.com/elkraps">@elkraps</a> (<a href="https://github.com/elkraps/elkraps/issues/9">#9</a>)</p>
 
-<p align="center"><code>F7</code> — miss by @elkraps (<a href="https://github.com/elkraps/elkraps/issues/8">#8</a>)</p>
+<p align="center"><code>F7</code> — miss by <a href="https://github.com/elkraps">@elkraps</a> (<a href="https://github.com/elkraps/elkraps/issues/8">#8</a>)</p>
 
-<p align="center"><code>F8</code> — hit by @elkraps (<a href="https://github.com/elkraps/elkraps/issues/7">#7</a>)</p>
+<p align="center"><code>F8</code> — hit by <a href="https://github.com/elkraps">@elkraps</a> (<a href="https://github.com/elkraps/elkraps/issues/7">#7</a>)</p>
 
 <h3 align="center">Current game leaders</h3>
 
 <table align="center" style="display: table; width: auto; margin-left: auto; margin-right: auto;">
 <tr><th>Player</th><th>Hits</th><th>Ships sunk</th><th>Shots</th></tr>
-<tr><td>@elkraps</td><td>3</td><td>1</td><td>11</td></tr>
+<tr><td><a href="https://github.com/elkraps">@elkraps</a></td><td>3</td><td>1</td><td>11</td></tr>
 </table>
 
 </details>

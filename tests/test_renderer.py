@@ -61,6 +61,7 @@ class RendererTests(unittest.TestCase):
         ]
         self.assertEqual([actor for actor, _ in rankings(state)], ["winner", "a", "b"])
         self.assertEqual(rankings(state)[0][1], {"hits": 1, "sunk": 1, "shots": 1})
+        self.assertIn('<a href="https://github.com/winner">@winner</a>', leaderboard(state))
 
     def test_external_text_cannot_inject_table_rows(self):
         state = new_game(1, "now")

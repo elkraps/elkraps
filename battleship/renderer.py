@@ -2,7 +2,7 @@
 
 import html
 from collections import Counter
-from urllib.parse import urlencode
+from urllib.parse import quote, urlencode
 
 START = "<!-- BATTLESHIP:START -->"
 END = "<!-- BATTLESHIP:END -->"
@@ -17,6 +17,10 @@ def escape(value):
         .replace("[", "&#91;")
         .replace("]", "&#93;")
     )
+
+
+def profile_link(actor):
+    return f'<a href="https://github.com/{quote(actor, safe="")}">@{escape(actor)}</a>'
 
 
 def rankings(state):
@@ -91,7 +95,7 @@ def board(state, repository):
 
 def leaderboard(state):
     rows = [
-        f"<tr><td>@{escape(actor)}</td><td>{stats['hits']}</td><td>{stats['sunk']}</td><td>{stats['shots']}</td></tr>"
+        f"<tr><td>{profile_link(actor)}</td><td>{stats['hits']}</td><td>{stats['sunk']}</td><td>{stats['shots']}</td></tr>"
         for actor, stats in rankings(state)[:10]
     ]
     if not rows:
@@ -135,7 +139,7 @@ def render(state, repository, previous=None):
     ]
     lines += [
         f'<p align="center"><code>{escape(shot["coordinate"])}</code> — {escape(shot["result"])} '
-        f'by @{escape(shot["actor"])} (<a href="https://github.com/{repository}/issues/{shot["issue_number"]}">'
+        f'by {profile_link(shot["actor"])} (<a href="https://github.com/{repository}/issues/{shot["issue_number"]}">'
         f"#{shot['issue_number']}</a>)</p>"
         for shot in reversed(state["shots"][-5:])
     ]
