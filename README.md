@@ -42,3 +42,10 @@
     />
   </a>
 </p>
+
+<!-- BATTLESHIP:START -->
+## Community Battleship
+
+The first game will appear here automatically after the Battleship workflow runs.
+Click a cell and create an issue to fire. Refresh this page after processing.
+<!-- BATTLESHIP:END -->

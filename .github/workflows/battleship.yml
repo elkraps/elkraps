@@ -1,0 +1,37 @@
+name: Battleship
+
+on:
+  issues:
+    types: [opened]
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '17,47 * * * *'
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: battleship-state
+  cancel-in-progress: false
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Test
+        run: python3 -m unittest discover -s tests -v
+      - name: Process game queue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          BATTLESHIP_MASTER_SECRET: ${{ secrets.BATTLESHIP_MASTER_SECRET }}
+          BATTLESHIP_BRANCH: main
+        run: python3 -m battleship.main

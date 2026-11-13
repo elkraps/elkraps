@@ -1,0 +1,42 @@
+name: Battleship - new game
+
+on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: Archive the active game as aborted and start a new one
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: battleship-state
+  cancel-in-progress: false
+
+jobs:
+  new-game:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Test
+        run: python3 -m unittest discover -s tests -v
+      - name: Start game
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          BATTLESHIP_MASTER_SECRET: ${{ secrets.BATTLESHIP_MASTER_SECRET }}
+          FORCE_NEW_GAME: ${{ inputs.force }}
+          BATTLESHIP_BRANCH: main
+        run: |
+          if [ "$FORCE_NEW_GAME" = "true" ]; then
+            python3 -m battleship.main --new-game --force
+          else
+            python3 -m battleship.main --new-game
+          fi
