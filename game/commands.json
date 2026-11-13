@@ -51,7 +51,7 @@
   },
   "11": {
     "message": "Shot G8: sunk a 3-cell ship.\n\nGame: game-000001\nShots: 11\nShips remaining: 5.\n\nThe board in the README has been updated.",
-    "delivered": false,
+    "delivered": true,
     "processed_at": "2026-11-13T10:01:57Z"
   }
 }
