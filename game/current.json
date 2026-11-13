@@ -210,6 +210,14 @@
       "issue_number": 24,
       "processed_at": "2026-11-13T13:43:36Z",
       "sunk_cells": []
+    },
+    {
+      "coordinate": "D5",
+      "result": "miss",
+      "actor": "elkraps",
+      "issue_number": 25,
+      "processed_at": "2026-11-13T13:44:05Z",
+      "sunk_cells": []
     }
   ],
   "secret_commitment": "901659fb5e23ec7703acb4de75f088cba7795ea73c4c91a5af7a55e2ac198463"
