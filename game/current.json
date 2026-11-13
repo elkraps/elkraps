@@ -386,6 +386,14 @@
       "issue_number": 45,
       "processed_at": "2026-11-13T14:09:45Z",
       "sunk_cells": []
+    },
+    {
+      "coordinate": "A8",
+      "result": "miss",
+      "actor": "elkraps",
+      "issue_number": 46,
+      "processed_at": "2026-11-13T14:10:21Z",
+      "sunk_cells": []
     }
   ],
   "secret_commitment": "901659fb5e23ec7703acb4de75f088cba7795ea73c4c91a5af7a55e2ac198463"
