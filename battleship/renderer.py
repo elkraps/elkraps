@@ -1,6 +1,7 @@
 """Render the public view, preserving all text outside the game markers."""
 
 import html
+from collections import Counter
 from urllib.parse import urlencode
 
 START = "<!-- BATTLESHIP:START -->"
@@ -30,15 +31,37 @@ def rankings(state):
 
 def summary(state):
     hits = sum(shot["result"] != "miss" for shot in state["shots"])
-    sunk = sum(shot["result"] == "sunk" for shot in state["shots"])
-    return f"Shots: **{len(state['shots'])}** · Hits: **{hits}/10** · Ships sunk: **{sunk}/6** · Players: **{len(rankings(state))}**"
+    return (
+        '<p align="center">'
+        f"Shots: <strong>{len(state['shots'])}</strong> &nbsp; · &nbsp; "
+        f"Hits: <strong>{hits}/{sum(state['fleet'])}</strong> &nbsp; · &nbsp; "
+        f"Players: <strong>{len(rankings(state))}</strong>"
+        "</p>"
+    )
+
+
+def fleet_status(state):
+    total = Counter(state["fleet"])
+    sunk = Counter(len(shot["sunk_cells"]) for shot in state["shots"] if shot["result"] == "sunk")
+    counts = [f"{length}-cell × {total[length] - sunk[length]}" for length in sorted(total, reverse=True)]
+    remaining = sum(total.values()) - sum(sunk.values())
+    return (
+        f'<h2 align="center">Ships left: {remaining}</h2>\n'
+        '<p align="center">' + " &nbsp; · &nbsp; ".join(counts) + "</p>"
+    )
 
 
 def board(state, repository):
     shots = {shot["coordinate"]: shot for shot in state["shots"]}
     sunk = {cell for shot in state["shots"] for cell in shot["sunk_cells"]}
     revealed = {cell for ship in state.get("revealed_fleet", []) for cell in ship}
-    lines = ["| | A | B | C | D | E | F | G | H |", "| --- |" + " --- |" * 8]
+    header = "<tr><th></th>" + "".join(f'<th scope="col">{letter}</th>' for letter in "ABCDEFGH") + "</tr>"
+    lines = [
+        '<div align="center">',
+        '<table align="center" style="display: table; width: auto; margin-left: auto; margin-right: auto;">',
+        "<thead>" + header + "</thead>",
+        "<tbody>",
+    ]
     for y in range(1, 9):
         row = []
         for letter in "ABCDEFGH":
@@ -56,52 +79,70 @@ def board(state, repository):
                         "body": f"Submit this issue to fire at {cell}. Return to the profile and refresh after processing.",
                     }
                 )
-                value = f"[·](https://github.com/{repository}/issues/new?{query})"
+                url = html.escape(f"https://github.com/{repository}/issues/new?{query}", quote=True)
+                value = f'<a href="{url}" title="Fire at {cell}">·</a>'
             else:
                 value = "·"
-            row.append(value)
-        lines.append(f"| **{y}** | " + " | ".join(row) + " |")
+            row.append(f'<td align="center">{value}</td>')
+        lines.append(f'<tr><th scope="row">{y}</th>' + "".join(row) + "</tr>")
+    lines += ["</tbody>", "</table>", "</div>"]
     return "\n".join(lines)
 
 
 def leaderboard(state):
-    rows = ["| Player | Hits | Ships sunk | Shots |", "| --- | --- | --- | --- |"]
-    rows += [
-        f"| @{escape(actor)} | {stats['hits']} | {stats['sunk']} | {stats['shots']} |"
+    rows = [
+        f"<tr><td>@{escape(actor)}</td><td>{stats['hits']}</td><td>{stats['sunk']}</td><td>{stats['shots']}</td></tr>"
         for actor, stats in rankings(state)[:10]
     ]
-    return "\n".join(rows) if len(rows) > 2 else "No shots yet. Be the first to play!"
+    if not rows:
+        return '<p align="center">No shots yet. Be the first to play!</p>'
+    return (
+        '<table align="center" style="display: table; width: auto; margin-left: auto; margin-right: auto;">\n'
+        "<tr><th>Player</th><th>Hits</th><th>Ships sunk</th><th>Shots</th></tr>\n" + "\n".join(rows) + "\n</table>"
+    )
 
 
 def render(state, repository, previous=None):
     lines = [
-        "## Community Battleship",
-        f"**{state['game_id']} · {state['status']}**",
-        "Click a cell and create an issue to fire. Refresh this page after processing.",
-        "One shared fleet. Everyone can play, and you can fire more than once.",
+        "<hr />",
+        '<h1 align="center">Community Battleship</h1>',
+        f'<p align="center"><sub>{escape(state["game_id"])} · {escape(state["status"])}</sub></p>',
+        '<p align="center">\n'
+        "  Click a cell → submit the issue → refresh to see your shot.<br />\n"
+        "  One shared fleet on an 8×8 board. Sink every ship. Play as often as you like.\n"
+        "</p>",
+        "<br />",
+        fleet_status(state),
         board(state, repository),
-        "Legend: · untried · ○ miss · × hit · # sunk · ■ revealed ship",
+        '<p align="center"><sub>· untried &nbsp; ○ miss &nbsp; × hit &nbsp; # sunk &nbsp; ■ revealed ship</sub></p>',
+        "<br />",
         summary(state),
-        "### Last five shots",
+        "<br />",
+        "<details>\n<summary><strong>Game activity</strong></summary>",
+        '<h3 align="center">Last five shots</h3>',
     ]
     lines += [
-        f"- `{shot['coordinate']}` — {shot['result']} by @{escape(shot['actor'])} ([#{shot['issue_number']}](https://github.com/{repository}/issues/{shot['issue_number']}))"
+        f'<p align="center"><code>{escape(shot["coordinate"])}</code> — {escape(shot["result"])} '
+        f'by @{escape(shot["actor"])} (<a href="https://github.com/{repository}/issues/{shot["issue_number"]}">'
+        f"#{shot['issue_number']}</a>)</p>"
         for shot in reversed(state["shots"][-5:])
     ]
     if not state["shots"]:
-        lines.append("No shots yet.")
-    lines += ["### Current game leaders", leaderboard(state)]
+        lines.append('<p align="center">No shots yet.</p>')
+    lines += ['<h3 align="center">Current game leaders</h3>', leaderboard(state)]
+    lines.append("</details>")
     if previous:
         lines += [
-            f"### Previous game: {previous['game_id']} ({previous['status']})",
+            "<hr />",
+            f'<h3 align="center">Previous game: {escape(previous["game_id"])} ({escape(previous["status"])})</h3>',
             summary(previous),
             leaderboard(previous),
             "<details><summary>Final board</summary>\n",
             board(previous, repository),
             "\n</details>",
-            f"[Game archive](https://github.com/{repository}/tree/main/game/archive)",
+            f'<p align="center"><a href="https://github.com/{repository}/tree/main/game/archive">Game archive</a></p>',
         ]
-    return "\n\n".join(lines)
+    return '<div align="center">\n\n' + "\n\n".join(lines) + "\n\n</div>"
 
 
 def replace_block(readme, block):

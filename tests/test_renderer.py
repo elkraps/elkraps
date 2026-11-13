@@ -1,7 +1,7 @@
 import unittest
 
 from battleship.engine import new_game
-from battleship.renderer import END, START, board, leaderboard, rankings, replace_block
+from battleship.renderer import END, START, board, fleet_status, leaderboard, rankings, replace_block, summary
 
 
 class RendererTests(unittest.TestCase):
@@ -26,7 +26,32 @@ class RendererTests(unittest.TestCase):
         state["shots"] = [{"coordinate": "B1", "result": "sunk", "sunk_cells": ["A1", "B1"]}]
         rendered = board(state, "owner/repo")
         self.assertNotIn("issues/new", rendered)
-        self.assertIn("| **1** | # | # |", rendered)
+        self.assertIn('<th scope="row">1</th><td align="center">#</td><td align="center">#</td>', rendered)
+
+    def test_initial_fleet_and_remaining_totals(self):
+        state = new_game(1, "now")
+        self.assertIn("Shots: <strong>0</strong>", summary(state))
+        self.assertIn("Hits: <strong>0/10</strong>", summary(state))
+        remaining = fleet_status(state)
+        self.assertIn("Ships left: 6", remaining)
+        for length, count in ((3, 1), (2, 2), (1, 3)):
+            self.assertIn(f"{length}-cell × {count}", remaining)
+
+    def test_only_sunk_ships_reduce_remaining_fleet(self):
+        state = new_game(1, "now")
+        state["shots"] = [
+            {"actor": "player", "result": "hit", "sunk_cells": []},
+            {"actor": "player", "result": "sunk", "sunk_cells": ["A1", "B1"]},
+            {"actor": "player", "result": "sunk", "sunk_cells": ["D4"]},
+            {"actor": "player", "result": "miss", "sunk_cells": []},
+        ]
+        self.assertIn("Shots: <strong>4</strong>", summary(state))
+        self.assertIn("Hits: <strong>3/10</strong>", summary(state))
+        remaining = fleet_status(state)
+        self.assertIn("Ships left: 4", remaining)
+        self.assertIn("3-cell × 1", remaining)
+        self.assertIn("2-cell × 1", remaining)
+        self.assertIn("1-cell × 2", remaining)
 
     def test_ranking_tiebreaks_and_sunk_counts_as_hit(self):
         state = new_game(1, "now")
@@ -43,4 +68,4 @@ class RendererTests(unittest.TestCase):
         rendered = leaderboard(state)
         self.assertNotIn("<script>", rendered)
         self.assertNotIn("[x]", rendered)
-        self.assertEqual(len(rendered.splitlines()), 3)
+        self.assertEqual(rendered.count("<tr>"), 2)

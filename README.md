@@ -1,51 +1,80 @@
 <p align="center">
-  <br/>
-  Welcome, I'm Vlad — backend developer into .NET and python, AI agents and automation.<br/>
-  Join my Telegram channel, let's build something cool together 🚀
-  <br/><br/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/csharp/csharp-original.svg" alt="C#" title="C#" width="32" height="32" />&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/dot-net/dot-net-original.svg" alt=".NET" title=".NET" width="32" height="32" />&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/python/python-original.svg" alt="Python" title="Python" width="32" height="32" />&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/typescript/typescript-original.svg" alt="TypeScript" title="TypeScript" width="32" height="32" />&nbsp;&nbsp;
+  <img src="https://unpkg.com/@lobehub/icons-static-svg@latest/icons/claude-color.svg" alt="Claude" title="Claude" width="32" height="32" />&nbsp;&nbsp;
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://unpkg.com/@lobehub/icons-static-png@latest/dark/codex.png" />
+    <img src="https://unpkg.com/@lobehub/icons-static-png@latest/light/codex.png" alt="Codex" title="Codex" width="32" height="32" />
+  </picture>&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/docker/docker-original.svg" alt="Docker" title="Docker" width="32" height="32" />&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/kubernetes/kubernetes-original.svg" alt="Kubernetes" title="Kubernetes" width="32" height="32" />&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" title="PostgreSQL" width="32" height="32" />&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/github/808080" alt="GitHub" title="GitHub" width="32" height="32" />
+</p>
 
-  <a href="https://t.me/elkraps_sandbox" target="_blank">
-    <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" />
-  </a>
-  <br/><br/>
-
-  <!-- Languages -->
-  <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white" />
-  <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=.net&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-
-  <br/>
-  
-  <!-- AI / Tools -->
-  <img src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=ffffff" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
-  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-  
-  <br/><br/>
-
-  <!-- Stats -->
-  <a href="https://leetcode.com/dobroisreal/">
-    <img 
-      src="https://leetcard.jacoblin.cool/dobroisreal?theme=dark&font=Fira%20Code" 
-      alt="LeetCode Stats"
-      width="48%"
-    />
-  </a>
-  <a href="https://git.io/streak-stats">
-    <img 
-      src="https://github-readme-streak-stats.herokuapp.com?user=elkraps&theme=gruvbox&hide_border=true&border_radius=5.2&mode=weekly" 
-      alt="GitHub Streak"
-      width="48%"
-    />
+<p align="center">
+  <a href="https://t.me/elkraps_sandbox">
+    <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
   </a>
 </p>
 
 <!-- BATTLESHIP:START -->
-## Community Battleship
+<div align="center">
 
-The first game will appear here automatically after the Battleship workflow runs.
-Click a cell and create an issue to fire. Refresh this page after processing.
+<hr />
+
+<h1 align="center">Community Battleship</h1>
+
+<p align="center"><sub>game-000001 · active</sub></p>
+
+<p align="center">
+  Click a cell → submit the issue → refresh to see your shot.<br />
+  One shared fleet on an 8×8 board. Sink every ship. Play as often as you like.
+</p>
+
+<br />
+
+<h2 align="center">Ships left: 6</h2>
+<p align="center">3-cell × 1 &nbsp; · &nbsp; 2-cell × 2 &nbsp; · &nbsp; 1-cell × 3</p>
+
+<div align="center">
+<table align="center" style="display: table; width: auto; margin-left: auto; margin-right: auto;">
+<thead><tr><th></th><th scope="col">A</th><th scope="col">B</th><th scope="col">C</th><th scope="col">D</th><th scope="col">E</th><th scope="col">F</th><th scope="col">G</th><th scope="col">H</th></tr></thead>
+<tbody>
+<tr><th scope="row">1</th><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+A1+game-000001&amp;body=Submit+this+issue+to+fire+at+A1.+Return+to+the+profile+and+refresh+after+processing." title="Fire at A1">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+B1+game-000001&amp;body=Submit+this+issue+to+fire+at+B1.+Return+to+the+profile+and+refresh+after+processing." title="Fire at B1">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+C1+game-000001&amp;body=Submit+this+issue+to+fire+at+C1.+Return+to+the+profile+and+refresh+after+processing." title="Fire at C1">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+D1+game-000001&amp;body=Submit+this+issue+to+fire+at+D1.+Return+to+the+profile+and+refresh+after+processing." title="Fire at D1">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+E1+game-000001&amp;body=Submit+this+issue+to+fire+at+E1.+Return+to+the+profile+and+refresh+after+processing." title="Fire at E1">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+F1+game-000001&amp;body=Submit+this+issue+to+fire+at+F1.+Return+to+the+profile+and+refresh+after+processing." title="Fire at F1">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+G1+game-000001&amp;body=Submit+this+issue+to+fire+at+G1.+Return+to+the+profile+and+refresh+after+processing." title="Fire at G1">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+H1+game-000001&amp;body=Submit+this+issue+to+fire+at+H1.+Return+to+the+profile+and+refresh+after+processing." title="Fire at H1">·</a></td></tr>
+<tr><th scope="row">2</th><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+A2+game-000001&amp;body=Submit+this+issue+to+fire+at+A2.+Return+to+the+profile+and+refresh+after+processing." title="Fire at A2">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+B2+game-000001&amp;body=Submit+this+issue+to+fire+at+B2.+Return+to+the+profile+and+refresh+after+processing." title="Fire at B2">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+C2+game-000001&amp;body=Submit+this+issue+to+fire+at+C2.+Return+to+the+profile+and+refresh+after+processing." title="Fire at C2">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+D2+game-000001&amp;body=Submit+this+issue+to+fire+at+D2.+Return+to+the+profile+and+refresh+after+processing." title="Fire at D2">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+E2+game-000001&amp;body=Submit+this+issue+to+fire+at+E2.+Return+to+the+profile+and+refresh+after+processing." title="Fire at E2">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+F2+game-000001&amp;body=Submit+this+issue+to+fire+at+F2.+Return+to+the+profile+and+refresh+after+processing." title="Fire at F2">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+G2+game-000001&amp;body=Submit+this+issue+to+fire+at+G2.+Return+to+the+profile+and+refresh+after+processing." title="Fire at G2">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+H2+game-000001&amp;body=Submit+this+issue+to+fire+at+H2.+Return+to+the+profile+and+refresh+after+processing." title="Fire at H2">·</a></td></tr>
+<tr><th scope="row">3</th><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+A3+game-000001&amp;body=Submit+this+issue+to+fire+at+A3.+Return+to+the+profile+and+refresh+after+processing." title="Fire at A3">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+B3+game-000001&amp;body=Submit+this+issue+to+fire+at+B3.+Return+to+the+profile+and+refresh+after+processing." title="Fire at B3">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+C3+game-000001&amp;body=Submit+this+issue+to+fire+at+C3.+Return+to+the+profile+and+refresh+after+processing." title="Fire at C3">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+D3+game-000001&amp;body=Submit+this+issue+to+fire+at+D3.+Return+to+the+profile+and+refresh+after+processing." title="Fire at D3">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+E3+game-000001&amp;body=Submit+this+issue+to+fire+at+E3.+Return+to+the+profile+and+refresh+after+processing." title="Fire at E3">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+F3+game-000001&amp;body=Submit+this+issue+to+fire+at+F3.+Return+to+the+profile+and+refresh+after+processing." title="Fire at F3">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+G3+game-000001&amp;body=Submit+this+issue+to+fire+at+G3.+Return+to+the+profile+and+refresh+after+processing." title="Fire at G3">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+H3+game-000001&amp;body=Submit+this+issue+to+fire+at+H3.+Return+to+the+profile+and+refresh+after+processing." title="Fire at H3">·</a></td></tr>
+<tr><th scope="row">4</th><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+A4+game-000001&amp;body=Submit+this+issue+to+fire+at+A4.+Return+to+the+profile+and+refresh+after+processing." title="Fire at A4">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+B4+game-000001&amp;body=Submit+this+issue+to+fire+at+B4.+Return+to+the+profile+and+refresh+after+processing." title="Fire at B4">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+C4+game-000001&amp;body=Submit+this+issue+to+fire+at+C4.+Return+to+the+profile+and+refresh+after+processing." title="Fire at C4">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+D4+game-000001&amp;body=Submit+this+issue+to+fire+at+D4.+Return+to+the+profile+and+refresh+after+processing." title="Fire at D4">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+E4+game-000001&amp;body=Submit+this+issue+to+fire+at+E4.+Return+to+the+profile+and+refresh+after+processing." title="Fire at E4">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+F4+game-000001&amp;body=Submit+this+issue+to+fire+at+F4.+Return+to+the+profile+and+refresh+after+processing." title="Fire at F4">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+G4+game-000001&amp;body=Submit+this+issue+to+fire+at+G4.+Return+to+the+profile+and+refresh+after+processing." title="Fire at G4">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+H4+game-000001&amp;body=Submit+this+issue+to+fire+at+H4.+Return+to+the+profile+and+refresh+after+processing." title="Fire at H4">·</a></td></tr>
+<tr><th scope="row">5</th><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+A5+game-000001&amp;body=Submit+this+issue+to+fire+at+A5.+Return+to+the+profile+and+refresh+after+processing." title="Fire at A5">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+B5+game-000001&amp;body=Submit+this+issue+to+fire+at+B5.+Return+to+the+profile+and+refresh+after+processing." title="Fire at B5">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+C5+game-000001&amp;body=Submit+this+issue+to+fire+at+C5.+Return+to+the+profile+and+refresh+after+processing." title="Fire at C5">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+D5+game-000001&amp;body=Submit+this+issue+to+fire+at+D5.+Return+to+the+profile+and+refresh+after+processing." title="Fire at D5">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+E5+game-000001&amp;body=Submit+this+issue+to+fire+at+E5.+Return+to+the+profile+and+refresh+after+processing." title="Fire at E5">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+F5+game-000001&amp;body=Submit+this+issue+to+fire+at+F5.+Return+to+the+profile+and+refresh+after+processing." title="Fire at F5">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+G5+game-000001&amp;body=Submit+this+issue+to+fire+at+G5.+Return+to+the+profile+and+refresh+after+processing." title="Fire at G5">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+H5+game-000001&amp;body=Submit+this+issue+to+fire+at+H5.+Return+to+the+profile+and+refresh+after+processing." title="Fire at H5">·</a></td></tr>
+<tr><th scope="row">6</th><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+A6+game-000001&amp;body=Submit+this+issue+to+fire+at+A6.+Return+to+the+profile+and+refresh+after+processing." title="Fire at A6">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+B6+game-000001&amp;body=Submit+this+issue+to+fire+at+B6.+Return+to+the+profile+and+refresh+after+processing." title="Fire at B6">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+C6+game-000001&amp;body=Submit+this+issue+to+fire+at+C6.+Return+to+the+profile+and+refresh+after+processing." title="Fire at C6">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+D6+game-000001&amp;body=Submit+this+issue+to+fire+at+D6.+Return+to+the+profile+and+refresh+after+processing." title="Fire at D6">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+E6+game-000001&amp;body=Submit+this+issue+to+fire+at+E6.+Return+to+the+profile+and+refresh+after+processing." title="Fire at E6">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+F6+game-000001&amp;body=Submit+this+issue+to+fire+at+F6.+Return+to+the+profile+and+refresh+after+processing." title="Fire at F6">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+G6+game-000001&amp;body=Submit+this+issue+to+fire+at+G6.+Return+to+the+profile+and+refresh+after+processing." title="Fire at G6">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+H6+game-000001&amp;body=Submit+this+issue+to+fire+at+H6.+Return+to+the+profile+and+refresh+after+processing." title="Fire at H6">·</a></td></tr>
+<tr><th scope="row">7</th><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+A7+game-000001&amp;body=Submit+this+issue+to+fire+at+A7.+Return+to+the+profile+and+refresh+after+processing." title="Fire at A7">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+B7+game-000001&amp;body=Submit+this+issue+to+fire+at+B7.+Return+to+the+profile+and+refresh+after+processing." title="Fire at B7">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+C7+game-000001&amp;body=Submit+this+issue+to+fire+at+C7.+Return+to+the+profile+and+refresh+after+processing." title="Fire at C7">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+D7+game-000001&amp;body=Submit+this+issue+to+fire+at+D7.+Return+to+the+profile+and+refresh+after+processing." title="Fire at D7">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+E7+game-000001&amp;body=Submit+this+issue+to+fire+at+E7.+Return+to+the+profile+and+refresh+after+processing." title="Fire at E7">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+F7+game-000001&amp;body=Submit+this+issue+to+fire+at+F7.+Return+to+the+profile+and+refresh+after+processing." title="Fire at F7">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+G7+game-000001&amp;body=Submit+this+issue+to+fire+at+G7.+Return+to+the+profile+and+refresh+after+processing." title="Fire at G7">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+H7+game-000001&amp;body=Submit+this+issue+to+fire+at+H7.+Return+to+the+profile+and+refresh+after+processing." title="Fire at H7">·</a></td></tr>
+<tr><th scope="row">8</th><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+A8+game-000001&amp;body=Submit+this+issue+to+fire+at+A8.+Return+to+the+profile+and+refresh+after+processing." title="Fire at A8">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+B8+game-000001&amp;body=Submit+this+issue+to+fire+at+B8.+Return+to+the+profile+and+refresh+after+processing." title="Fire at B8">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+C8+game-000001&amp;body=Submit+this+issue+to+fire+at+C8.+Return+to+the+profile+and+refresh+after+processing." title="Fire at C8">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+D8+game-000001&amp;body=Submit+this+issue+to+fire+at+D8.+Return+to+the+profile+and+refresh+after+processing." title="Fire at D8">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+E8+game-000001&amp;body=Submit+this+issue+to+fire+at+E8.+Return+to+the+profile+and+refresh+after+processing." title="Fire at E8">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+F8+game-000001&amp;body=Submit+this+issue+to+fire+at+F8.+Return+to+the+profile+and+refresh+after+processing." title="Fire at F8">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+G8+game-000001&amp;body=Submit+this+issue+to+fire+at+G8.+Return+to+the+profile+and+refresh+after+processing." title="Fire at G8">·</a></td><td align="center"><a href="https://github.com/elkraps/elkraps/issues/new?title=battleship%3A+fire+H8+game-000001&amp;body=Submit+this+issue+to+fire+at+H8.+Return+to+the+profile+and+refresh+after+processing." title="Fire at H8">·</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<p align="center"><sub>· untried &nbsp; ○ miss &nbsp; × hit &nbsp; # sunk &nbsp; ■ revealed ship</sub></p>
+
+<br />
+
+<p align="center">Shots: <strong>0</strong> &nbsp; · &nbsp; Hits: <strong>0/10</strong> &nbsp; · &nbsp; Players: <strong>0</strong></p>
+
+<br />
+
+<details>
+<summary><strong>Game activity</strong></summary>
+
+<h3 align="center">Last five shots</h3>
+
+<p align="center">No shots yet.</p>
+
+<h3 align="center">Current game leaders</h3>
+
+<p align="center">No shots yet. Be the first to play!</p>
+
+</details>
+
+</div>
 <!-- BATTLESHIP:END -->
