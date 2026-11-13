@@ -261,6 +261,14 @@
         "F4",
         "G4"
       ]
+    },
+    {
+      "coordinate": "C5",
+      "result": "hit",
+      "actor": "elkraps",
+      "issue_number": 31,
+      "processed_at": "2026-11-13T13:47:06Z",
+      "sunk_cells": []
     }
   ],
   "secret_commitment": "901659fb5e23ec7703acb4de75f088cba7795ea73c4c91a5af7a55e2ac198463"
