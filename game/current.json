@@ -170,6 +170,14 @@
       "issue_number": 19,
       "processed_at": "2026-11-13T13:34:13Z",
       "sunk_cells": []
+    },
+    {
+      "coordinate": "H5",
+      "result": "miss",
+      "actor": "elkraps",
+      "issue_number": 20,
+      "processed_at": "2026-11-13T13:41:33Z",
+      "sunk_cells": []
     }
   ],
   "secret_commitment": "901659fb5e23ec7703acb4de75f088cba7795ea73c4c91a5af7a55e2ac198463"
