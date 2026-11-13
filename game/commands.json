@@ -63,5 +63,10 @@
     "message": "Shot C4: miss.\n\nGame: game-000001\nShots: 13\nShips remaining: 5.\n\nThe board in the README has been updated.",
     "delivered": true,
     "processed_at": "2026-11-13T13:22:31Z"
+  },
+  "14": {
+    "message": "Shot A1: miss.\n\nGame: game-000001\nShots: 14\nShips remaining: 5.\n\nThe board in the README has been updated.",
+    "delivered": false,
+    "processed_at": "2026-11-13T13:25:13Z"
   }
 }
