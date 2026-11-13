@@ -109,7 +109,8 @@ def run(client, repo, secret, repository, restart=False, force=False):
         path = Path("README.md")
         # Preserve exact bytes outside the markers, including existing line endings.
         readme = path.read_bytes().decode("utf-8")
-        path.write_bytes(replace_block(readme, render(state, repository, previous)).encode("utf-8"))
+        archives = [read_json(file) for file in sorted(Path("game/archive").glob("*.json"))]
+        path.write_bytes(replace_block(readme, render(state, repository, previous, archives=archives)).encode("utf-8"))
         if repo.publish():
             break
     else:

@@ -76,6 +76,27 @@ class FakeClient:
 
 
 class ProcessingTests(unittest.TestCase):
+    def test_all_time_stats_survive_multiple_games_and_recovery(self):
+        queue = []
+        for game_number in (1, 2):
+            state, _, _, _ = process(None, {}, [], SECRET, REPOSITORY, NOW)
+            state["game_id"] = f"game-{game_number:06d}"
+            state.pop("secret_commitment", None)
+            for ship in fleet(state, SECRET, REPOSITORY):
+                for cell in ship:
+                    queue.append(issue(len(queue) + 1, cell, state["game_id"]))
+        with workspace():
+            repo, client = FakeRepository(), FakeClient(queue)
+            run(client, repo, SECRET, REPOSITORY)
+            client.queue = []
+            run(client, repo, SECRET, REPOSITORY)
+            hall = Path("README.md").read_text().split(">Hall of Fame</h3>", 1)[1].split("</details>", 1)[0]
+            self.assertIn("Games completed: <strong>2</strong>", hall)
+            self.assertIn("Shots: <strong>20</strong>", hall)
+            self.assertIn("Players: <strong>20</strong>", hall)
+            self.assertEqual(hall.count('href="https://github.com/player-'), 10)
+            self.assertEqual(read_json("game/current.json")["game_id"], "game-000003")
+
     def test_bootstrap_is_idempotent_and_does_not_publish_fleet(self):
         with workspace():
             repo, client = FakeRepository(), FakeClient()

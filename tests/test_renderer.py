@@ -1,10 +1,46 @@
 import unittest
 
 from battleship.engine import new_game
-from battleship.renderer import END, START, board, fleet_status, leaderboard, rankings, replace_block, summary
+from battleship.renderer import END, START, board, fleet_status, leaderboard, rankings, render, replace_block, summary
 
 
 class RendererTests(unittest.TestCase):
+    def test_all_time_totals_count_finished_and_current_games_once(self):
+        finished = new_game(1, "now")
+        finished.update(
+            status="finished", shots=[{"actor": "veteran", "result": "sunk", "coordinate": "B1", "sunk_cells": ["B1"]}]
+        )
+        current = new_game(2, "now")
+        current["shots"] = [
+            {"actor": "newcomer", "result": "miss", "coordinate": "A1", "sunk_cells": [], "issue_number": 1}
+        ]
+        output = render(current, "owner/repo", finished, archives=[finished, finished])
+        hall = output.split(">Hall of Fame</h3>", 1)[1].split("</details>", 1)[0]
+        self.assertIn("Games completed: <strong>1</strong>", hall)
+        self.assertIn("Shots: <strong>2</strong>", hall)
+        self.assertIn("Players: <strong>2</strong>", hall)
+        self.assertIn('href="https://github.com/veteran"', hall)
+        self.assertIn('href="https://github.com/newcomer"', hall)
+
+    def test_aborted_games_do_not_affect_all_time_stats(self):
+        aborted = new_game(1, "now")
+        aborted.update(status="aborted", shots=[{"actor": "cancelled-player", "result": "hit"}])
+        output = render(new_game(2, "now"), "owner/repo", archives=[aborted])
+        hall = output.split(">Hall of Fame</h3>", 1)[1].split("</details>", 1)[0]
+        self.assertIn("Games completed: <strong>0</strong>", hall)
+        self.assertIn("Shots: <strong>0</strong>", hall)
+        self.assertNotIn("cancelled-player", hall)
+
+    def test_hall_of_fame_limits_display_to_ten_without_losing_player_count(self):
+        finished = new_game(1, "now")
+        finished.update(status="finished", shots=[{"actor": f"player-{i:02d}", "result": "hit"} for i in range(12)])
+        output = render(new_game(2, "now"), "owner/repo", archives=[finished])
+        hall = output.split(">Hall of Fame</h3>", 1)[1].split("</details>", 1)[0]
+        self.assertEqual(hall.count('href="https://github.com/player-'), 10)
+        self.assertIn("Players: <strong>12</strong>", hall)
+        self.assertIn("@player-00", hall)
+        self.assertNotIn("@player-10", hall)
+
     def test_preserves_text_outside_markers(self):
         readme = f"Привет\r\n{START}\nold\n{END}\r\nFooter\n"
         self.assertEqual(replace_block(readme, "new"), f"Привет\r\n{START}\nnew\n{END}\r\nFooter\n")

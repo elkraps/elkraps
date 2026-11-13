@@ -106,7 +106,23 @@ def leaderboard(state):
     )
 
 
-def render(state, repository, previous=None):
+def hall_of_fame(state, archives):
+    games = {game["game_id"]: game for game in archives if game["status"] == "finished"}
+    if state["status"] in ("active", "finished"):
+        games[state["game_id"]] = state
+    history = {"shots": [shot for game in games.values() for shot in game["shots"]]}
+    completed = sum(game["status"] == "finished" for game in games.values())
+    return (
+        '<h3 align="center">Hall of Fame</h3>\n\n'
+        '<p align="center">'
+        f"Games completed: <strong>{completed}</strong> &nbsp; · &nbsp; "
+        f"Shots: <strong>{len(history['shots'])}</strong> &nbsp; · &nbsp; "
+        f"Players: <strong>{len(rankings(history))}</strong></p>\n\n"
+        '<p align="center"><sub>All-time top 10 · completed games + current game</sub></p>\n\n' + leaderboard(history)
+    )
+
+
+def render(state, repository, previous=None, *, archives=()):
     lines = [
         '<pre align="left" style="display: inline-block; text-align: left;">'
         + html.escape(
@@ -134,7 +150,6 @@ def render(state, repository, previous=None):
         "<br />",
         summary(state),
         "<br />",
-        "<details>\n<summary><strong>Game activity</strong></summary>",
         '<h3 align="center">Last five shots</h3>',
     ]
     lines += [
@@ -146,7 +161,12 @@ def render(state, repository, previous=None):
     if not state["shots"]:
         lines.append('<p align="center">No shots yet.</p>')
     lines += ['<h3 align="center">Current game leaders</h3>', leaderboard(state)]
-    lines.append("</details>")
+    lines += [
+        "<br />",
+        "<details>\n<summary><strong>All-time stats</strong></summary>",
+        hall_of_fame(state, [*archives, *([previous] if previous else [])]),
+        "</details>",
+    ]
     if previous:
         lines += [
             "<hr />",
