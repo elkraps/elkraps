@@ -130,7 +130,7 @@ def render(state, repository, previous=None):
         "<br />",
         fleet_status(state),
         board(state, repository),
-        '<p align="center"><sub>· untried &nbsp; ○ miss &nbsp; × hit &nbsp; # sunk &nbsp; ■ revealed ship</sub></p>',
+        '<p align="center"><sub>· untried &nbsp; ○ miss &nbsp; × hit &nbsp; # sunk</sub></p>',
         "<br />",
         summary(state),
         "<br />",
