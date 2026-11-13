@@ -221,7 +221,7 @@
   },
   "45": {
     "message": "Shot A5: miss.\n\nGame: game-000001\nShots: 45\nShips remaining: 2.\n\nThe board in the README has been updated.",
-    "delivered": false,
+    "delivered": true,
     "processed_at": "2026-11-13T14:09:45Z"
   }
 }
