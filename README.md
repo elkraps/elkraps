@@ -1,29 +1,14 @@
-<p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/csharp/csharp-original.svg" alt="C#" title="C#" width="32" height="32" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/dot-net/dot-net-original.svg" alt=".NET" title=".NET" width="32" height="32" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/python/python-original.svg" alt="Python" title="Python" width="32" height="32" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/typescript/typescript-original.svg" alt="TypeScript" title="TypeScript" width="32" height="32" />&nbsp;&nbsp;
-  <img src="https://unpkg.com/@lobehub/icons-static-svg@latest/icons/claude-color.svg" alt="Claude" title="Claude" width="32" height="32" />&nbsp;&nbsp;
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://unpkg.com/@lobehub/icons-static-png@latest/dark/codex.png" />
-    <img src="https://unpkg.com/@lobehub/icons-static-png@latest/light/codex.png" alt="Codex" title="Codex" width="32" height="32" />
-  </picture>&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/docker/docker-original.svg" alt="Docker" title="Docker" width="32" height="32" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/kubernetes/kubernetes-original.svg" alt="Kubernetes" title="Kubernetes" width="32" height="32" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" title="PostgreSQL" width="32" height="32" />&nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/github/808080" alt="GitHub" title="GitHub" width="32" height="32" />
-</p>
-
-<p align="center">
-  <a href="https://t.me/elkraps_sandbox">
-    <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
-  </a>
-</p>
-
 <!-- BATTLESHIP:START -->
 <div align="center">
 
-<hr />
+<pre align="left" style="display: inline-block; text-align: left;">                  |    |    |
+                 )_)  )_)  )_)
+                )___))___))___)\
+               )____)____)_____)\\
+             _____|____|____|____\\__
+    ---------\                   /---------
+      ~  ~    \_________________/   ~  ~
+         ~  ~                     ~  ~</pre>
 
 <h1 align="center">Community Battleship</h1>
 
@@ -81,3 +66,27 @@
 
 </div>
 <!-- BATTLESHIP:END -->
+
+<hr />
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/csharp/csharp-original.svg" alt="C#" title="C#" width="32" height="32" />&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/dot-net/dot-net-original.svg" alt=".NET" title=".NET" width="32" height="32" />&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/python/python-original.svg" alt="Python" title="Python" width="32" height="32" />&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/typescript/typescript-original.svg" alt="TypeScript" title="TypeScript" width="32" height="32" />&nbsp;&nbsp;
+  <img src="https://unpkg.com/@lobehub/icons-static-svg@latest/icons/claude-color.svg" alt="Claude" title="Claude" width="32" height="32" />&nbsp;&nbsp;
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://unpkg.com/@lobehub/icons-static-png@latest/dark/codex.png" />
+    <img src="https://unpkg.com/@lobehub/icons-static-png@latest/light/codex.png" alt="Codex" title="Codex" width="32" height="32" />
+  </picture>&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/docker/docker-original.svg" alt="Docker" title="Docker" width="32" height="32" />&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/kubernetes/kubernetes-original.svg" alt="Kubernetes" title="Kubernetes" width="32" height="32" />&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" title="PostgreSQL" width="32" height="32" />&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/github/808080" alt="GitHub" title="GitHub" width="32" height="32" />
+</p>
+
+<p align="center">
+  <a href="https://t.me/elkraps_sandbox">
+    <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
+  </a>
+</p>

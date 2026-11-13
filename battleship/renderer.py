@@ -104,7 +104,18 @@ def leaderboard(state):
 
 def render(state, repository, previous=None):
     lines = [
-        "<hr />",
+        '<pre align="left" style="display: inline-block; text-align: left;">'
+        + html.escape(
+            r"""                  |    |    |
+                 )_)  )_)  )_)
+                )___))___))___)\
+               )____)____)_____)\\
+             _____|____|____|____\\__
+    ---------\                   /---------
+      ~  ~    \_________________/   ~  ~
+         ~  ~                     ~  ~"""
+        )
+        + "</pre>",
         '<h1 align="center">Community Battleship</h1>',
         f'<p align="center"><sub>{escape(state["game_id"])} · {escape(state["status"])}</sub></p>',
         '<p align="center">\n'
