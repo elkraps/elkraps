@@ -14,6 +14,15 @@
   ],
   "started_at": "2026-11-13T14:11:38Z",
   "finished_at": null,
-  "shots": [],
+  "shots": [
+    {
+      "coordinate": "B3",
+      "result": "miss",
+      "actor": "elkraps",
+      "issue_number": 49,
+      "processed_at": "2026-11-14T02:08:47Z",
+      "sunk_cells": []
+    }
+  ],
   "secret_commitment": "9ef69749cd5810e6b067bb72ba22a050311c83eb6a75f94af663293f5b029abf"
 }

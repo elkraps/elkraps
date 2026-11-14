@@ -238,5 +238,10 @@
     "message": "Shot C3: sunk a 1-cell ship.\n\nGame: game-000001\nShots: 48\nShips remaining: 0.\n\nVictory! The fleet is sunk. Results are archived and a new game is ready.\n\nThe board in the README has been updated.",
     "delivered": true,
     "processed_at": "2026-11-13T14:11:38Z"
+  },
+  "49": {
+    "message": "Shot B3: miss.\n\nGame: game-000002\nShots: 1\nShips remaining: 6.\n\nThe board in the README has been updated.",
+    "delivered": false,
+    "processed_at": "2026-11-14T02:08:47Z"
   }
 }
